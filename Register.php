@@ -1,10 +1,10 @@
 <?php
     $con = mysqli_connect("mysql10.000webhost.com", "a3170397_Chazz", "Chipper007", "a3170397_GeogApp");
     
-    $name = $_POST["Name"];
-    $age = $_POST["Email"];
-    $username = $_POST["Username"];
-    $password = $_POST["Password"];
+    $name = $_POST["name"];
+    $age = $_POST["email"];
+    $username = $_POST["username"];
+    $password = $_POST["password"];
 
     $statement = mysqli_prepare($con, "INSERT INTO user (name, username, Email, password) VALUES (?, ?, ?, ?)");
     mysqli_stmt_bind_param($statement, "ssss", $name, $username, $email, $password);
