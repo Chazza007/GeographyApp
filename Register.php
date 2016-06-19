@@ -2,7 +2,7 @@
     $con = mysqli_connect("mysql11.000webhost.com", "a3170397_Chazz", "Chipper007", "a3170397_GeogApp");
     
     $name = $_POST["name"];
-    $age = $_POST["email"];
+    $email = $_POST["email"];
     $username = $_POST["username"];
     $password = $_POST["password"];
 
