@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect("http://geographyapp.net16.net", "a3170397_Chazz", "Chipper007", "a3170397_GeogApp");
+    $con = mysqli_connect("http://sql11.000webhost.com", "a3170397_Chazz", "Chipper007", "a3170397_GeogApp");
     
     $name = $_POST["name"];
     $age = $_POST["email"];
