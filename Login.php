@@ -1,5 +1,5 @@
 <?php
-    $con = mysqli_connect("mysql10.000webhost.com", "a3170397_Chazz", "Chipper007", "a3170397_GeogApp");
+    $con = mysqli_connect("mysql11.000webhost.com", "a3170397_Chazz", "Chipper007", "a3170397_GeogApp");
     
     $username = $_POST["username"];
     $password = $_POST["password"];
@@ -9,7 +9,7 @@
     mysqli_stmt_execute($statement);
     
     mysqli_stmt_store_result($statement);
-    mysqli_stmt_bind_result($statement, $userID, $name, $age, $username, $password);
+    mysqli_stmt_bind_result($statement, $userID, $name, $email, $username, $password);
     
     $response = array();
     $response["success"] = false;  
